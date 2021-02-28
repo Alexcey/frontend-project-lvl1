@@ -9,8 +9,4 @@ jobs:
 
     steps:
       - name: Checkout code
-      - name: Run Super-Linter
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: make lint
