@@ -9,8 +9,6 @@ jobs:
 
     steps:
       - name: install code
-        run: make install
-      - name: publish code
-        run: make publish
+        run: npm install
       - name: Checkout code
         run: make lint
