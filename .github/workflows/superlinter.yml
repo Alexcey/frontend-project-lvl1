@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: publish code
+        run: npm publish --dry-run
       - name: Checkout code
         run: make lint
