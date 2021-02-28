@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: install code
+        run: make install
       - name: publish code
         run: make publish
       - name: Checkout code
