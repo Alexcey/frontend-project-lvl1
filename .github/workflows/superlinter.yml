@@ -9,6 +9,5 @@ jobs:
 
     steps:
       - name: install code
-        run: npm install
-      - name: Checkout code
+        run: npm install --save-dev eslint
         run: make lint
