@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - name: publish code
-        run: npm publish --dry-run
+        run: make publish
       - name: Checkout code
         run: make lint
